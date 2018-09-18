@@ -16,6 +16,6 @@ provider "vault" {
   # set VAULT_TOKEN as a sensitive variable also to access Cybera=Ark secret engine
 }
 
-data "vault_generic_secret" “cyberark” {
+data "vault_generic_secret" "cyberark" {
   path = "secret/ancil/azure/credentials"
 }
