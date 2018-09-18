@@ -36,6 +36,10 @@ output "vn_address_space" {
   value = "${azurerm_virtual_network.myterraformnetwork.address_space}"
 }
 
+output "vn_compute_name" {
+  value = "${azurerm_virtual_machine.myterraformvm.os_profile}"
+}
+
 /*variable "ARM_SUBSCRIPTION_ID" {
  
 }
